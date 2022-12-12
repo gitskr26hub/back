@@ -8,7 +8,7 @@ const {UserModel} = require("./models/User.model")
 const {notesRouter} = require("./routes/notes.route");
 const { authenticate } = require("./middlewares/authentication");
 const app = express();
-
+require('dotenv').config()
 app.use(express.json())
 app.use(cors({
     origin : "*"
